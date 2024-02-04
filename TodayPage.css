@@ -1,0 +1,151 @@
+.main{
+    width: 1440px;
+    height: 1024px;
+    background: #252323;
+}
+.img-container{
+    width: 57.314px;
+    height: 34.411px;
+    flex-shrink: 0;
+}
+.Name{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 69px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+.time{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 19px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration-line: underline;
+    padding-top: 75px;
+}
+.nav-components{
+    padding-left: 150px;
+}
+.nav-item1{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-decoration: underline;
+    padding-right: 50px;
+}
+.nav-item2{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    padding-right: 50px;
+    text-decoration: none;
+}
+.nav-item3{
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 250;
+    line-height: normal;
+    text-decoration: none;
+}
+.Search-bar{
+    align-items: center;
+    color: #FFF;
+}
+.Search-bar{
+    margin: 0 auto;
+    width: 711px;
+    height: 66px;
+    flex-shrink: 0;
+    background-color:white;
+    border-radius: 15px;
+    text-decoration: none;
+}
+.Search-bar-components{
+    padding-left: 50px;
+    padding-top: 7px;
+}
+.Search{
+    color: #524E4E;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    text-decoration: none;
+    padding-left: 65px;
+    position: relative;bottom: 40px;
+}
+.Main-Info-div{
+    margin: 0 auto;
+    width: 817px;
+    height: 425px;
+    flex-shrink: 0;
+    border-radius: 32px;
+    background: linear-gradient(113deg, #AD36CB 32.23%, #333 67.37%);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(255, 250, 250, 0.25), 0px 4px 4px 0px rgba(253, 245, 245, 0.25);
+}
+.Min-Info-divs div{
+    margin-left: 0px;
+    width: 121px;
+    height: 118px;
+}
+.Min-Info-divs{
+    margin-left: 110px;
+    display: flex;
+    flex-direction: row;
+    width: 121px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+.Min-Info-div2{
+    display: flex;
+    flex-direction: row;
+    width: 121px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+}.Min-Info-div3{
+    width: 121px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+}.Min-Info-div4{
+    width: 121px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+}.Min-Info-div5{
+    width: 121px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+}.Min-Info-div6{
+    width: 121px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+}.Min-Info-div7{
+    width: 121px;
+    height: 118px;
+    flex-shrink: 0;
+    border-radius: 25px;
+    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sign up page</title>
+    <style>
+        body {
+            background-color: #87CEEB; 
+            background-image: url('SkyImage.jpg');
+        }
+        .header {
+            margin: 0 auto;
+            text-align: center;
+            width: 1100px;
+            color: red;
+            background-color: gold;
+            padding: 20px;
+            border: 10px solid;
+        }
+        .logo {
+            margin: 0 auto;
+            text-align: center;
+            width: 250px;
+            border: 10px solid;
+            height: 200px;
+        }
+        .logo img {
+            height: 200px;
+            width: 250px;
+        }
+        .login-container {
+            margin: 0 auto;
+            width: 600px;
+            background-color: cyan;
+            text-align: center;
+            border: 20px solid;
+            padding: 30px;
+            border-color: purple;
+        }
+        .form-container {
+            margin: 0 auto;
+            width: 500px;
+            background-color: white;
+            text-align: center;
+            border: 10px solid;
+            padding-top: 50px;
+            padding-bottom: 20px;
+            background-image: url('Skyimage.png');
+        }
+        form div {
+            text-align: center;
+            padding: 20px;
+        }
+        .login-button {
+            text-align: center;
+            padding-top: 40px;
+        }
+        .Login-page {
+            text-align: right;
+            padding-top: 15px;
+            padding-right: 35px;
+        }
+        .hyperlink-text{
+            color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><u><i>Sign up page</i></u></h1>
+    </div>
+    <div class="logo">
+        <img src="download.png" alt="Download Image">
+    </div>
+    <div class="login-container">
+        <div class="form-container">
+            <form action="connect.php" method="POST">
+                <div>
+                    First name<input type="text" name="FirstName">
+                       <br><br>
+                    Last name<input type="text" name="LastName">
+                </div>        
+                <div>
+                    <input type="email" placeholder="Enter Your Email address" size="50" name="Email" >
+                </div>
+                <div>
+                    <input type="text" placeholder="Enter Your User Name" size="40" name="UserName">
+                </div>
+                <div>
+                    <input type="password" placeholder="Enter Your password" size="30" name="password">
+                </div>
+                <div>
+                    <input type="date" placeholder="Enter you Date of Birth" name=" ">
+                </div>
+                <div class="login-button">
+                    <input type="submit" value="Sign up">
+                </div>
+            </form>
+            <div class="Login-page">
+                <a href="LoginPage.html">
+                    <div class="hyperlink-text">Do you already have an account
+                    </div></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
