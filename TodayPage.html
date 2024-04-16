@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="TodayPage.css" rel="stylesheet" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>WeatherMe</title>
   </head>
   <body class="main">
@@ -42,24 +43,62 @@
     </a>
     <br><br><br><br>
     <div class="Main-Info-div">
-      
+      <p class="CityName">Mumbai</p>
+      <div class="Temperature-container"> 
+        <img src="🦆 icon _temperature_.jpg" class="temp-icon-img">
+        <p class="temperature">27°C</p>
+        <img src="Cloud.png" class="cloud-icon-img">
+      </div>
+      <p class="Date">April 22 , Monday</p>
+      <br><br><br>
+      <div class="info-container">
+        <p class="info-box">Humindity <br> 99%</p>
+        <p class="info-box">Visibility <br> 8 Km</p>
+        <p class="info-box"> Air Pressure <br> 1005 hpa</p>
+        <p class="info-box">Wind <br> 2 mph</p>
+      </div>
     </div>
     <br><br><br><br>
 <div class="Min-Info-divs">
   <div></div>
   <div></div>
-  <div class="Min-Info-div3"></div>
+  <div class="Min-Info-div3">
+    <p class="time-container">19:00 pm</p>
+    <img src="Cloud.png" class="min-img-container">
+    <p class="temp-conatainer">29°C</p>
+  </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <div class="Min-Info-div3"></div>
+  <div class="Min-Info-div3">
+    <p class="time-container">21:00 pm</p>
+    <img src="Cloud.png" class="min-img-container">
+    <p class="temp-conatainer">27°C</p>
+  </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <div class="Min-Info-div4"></div>
+  <div class="Min-Info-div4">
+    <p class="time-container">23:00 pm</p>
+    <img src="Cloud.png" class="min-img-container">
+    <p class="temp-conatainer">27°C</p>
+  </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <div class="Min-Info-div5"></div>
+  <div class="Min-Info-div5">
+    <p class="time-container">1:00 am</p>
+    <img src="Cloud.png" class="min-img-container">
+    <p class="temp-conatainer">26°C</p>
+  </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <div class="Min-Info-div6"></div>
+  <div class="Min-Info-div6">
+    <p class="time-container">3:00 am</p>
+    <img src="Cloud.png" class="min-img-container">
+    <p class="temp-conatainer">24°C</p>
+  </div>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-  <div class="Min-Info-div7"></div>
+  <div class="Min-Info-div7">
+    <p class="time-container">5:00 am</p>
+    <img src="Cloud.png" class="min-img-container">
+    <p class="temp-conatainer">25°C</p>
+  </div>
 </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="api.js"></script>
   </body>
 </html>

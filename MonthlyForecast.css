@@ -95,57 +95,60 @@
     background: linear-gradient(113deg, #AD36CB 32.23%, #333 67.37%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(255, 250, 250, 0.25), 0px 4px 4px 0px rgba(253, 245, 245, 0.25);
 }
-.Min-Info-divs div{
-    margin-left: 0px;
-    width: 121px;
-    height: 118px;
+
+.CityName{
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 295px;
+    height: 36px;
+    flex-shrink: 0;color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
-.Min-Info-divs{
-    margin-left: 110px;
-    display: flex;
-    flex-direction: row;
-    width: 121px;
-    height: 118px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+.temperature {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 75px;
+    color: #f2f1f1;
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
-.Min-Info-div2{
+
+.Date{
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 195px;
+    height: 21px;
+    flex-shrink: 0;color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.info-container {
     display: flex;
-    flex-direction: row;
-    width: 121px;
-    height: 118px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
-}.Min-Info-div3{
-    width: 121px;
-    height: 118px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
-}.Min-Info-div4{
-    width: 121px;
-    height: 118px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
-}.Min-Info-div5{
-    width: 121px;
-    height: 118px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
-}.Min-Info-div6{
-    width: 121px;
-    height: 118px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
-}.Min-Info-div7{
-    width: 121px;
-    height: 118px;
-    flex-shrink: 0;
-    border-radius: 25px;
-    background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.info-box {
+    width: 200px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

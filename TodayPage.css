@@ -95,6 +95,76 @@
     background: linear-gradient(113deg, #AD36CB 32.23%, #333 67.37%);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(255, 250, 250, 0.25), 0px 4px 4px 0px rgba(253, 245, 245, 0.25);
 }
+.CityName{
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 295px;
+    height: 36px;
+    flex-shrink: 0;color: #FFF;
+    font-family: Poppins;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+.Temperature-container {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 75px;
+    width: 100%;
+    display: flex; /* Added */
+    justify-content: center; /* Added */
+    align-items: center; /* Added */
+}
+
+.temp-icon-img,
+.cloud-icon-img {
+    margin: 0 10px; /* Adjust spacing between icons */
+    
+}
+
+.temperature {
+    margin: 0;
+    color: #f2f1f1;
+    font-family: Poppins;
+    font-size: 70px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+.Date{
+    padding-left: 25px;
+    padding-top: 25px;
+    width: 195px;
+    height: 21px;
+    flex-shrink: 0;color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+.info-container {
+    display: flex;
+    justify-content: space-between; /* Adjust as needed */
+}
+
+.info-box {
+    width: 200px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 .Min-Info-divs div{
     margin-left: 0px;
     width: 121px;
@@ -148,4 +218,33 @@
     flex-shrink: 0;
     border-radius: 25px;
     background: linear-gradient(180deg, #B32DD4 0%, rgba(217, 217, 217, 0.00) 100%);
+}
+.time-container{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 5px;
+    width: 88px;
+    height: 9px;
+    flex-shrink: 0;color: #FFF;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.min-img-container{
+    padding-left: 25px;
+    padding-top: 10px;
+}
+.temp-conatainer{
+    margin: 0 auto;
+    text-align: center;
+    width: 60px;
+    height: 14px;
+    flex-shrink: 0;color: #FFF;
+    font-family: Poppins;
+    font-size: 21px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
 }
