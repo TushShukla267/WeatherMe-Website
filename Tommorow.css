@@ -249,3 +249,82 @@
     font-weight: 300;
     line-height: normal;
 }
+
+/* Animation for main container */
+.Main-Info-div {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  /* Animation for nav items */
+  .nav-item1,
+  .nav-item2,
+  .nav-item3 {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  /* Animation for search bar */
+  .Search-bar {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  /* Animation for info containers */
+  .CityName,
+  .Temperature-container,
+  .Date,
+  .info-box {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  /* Delay each animation */
+  .nav-item1 {
+    animation-delay: 0.1s;
+  }
+  
+  .nav-item2 {
+    animation-delay: 0.2s;
+  }
+  
+  .nav-item3 {
+    animation-delay: 0.3s;
+  }
+  
+  .Search-bar {
+    animation-delay: 0.4s;
+  }
+  
+  .CityName {
+    animation-delay: 0.5s;
+  }
+  
+  .Temperature-container {
+    animation-delay: 0.6s;
+  }
+  
+  .Date {
+    animation-delay: 0.7s;
+  }
+  
+  .info-box {
+    animation-delay: 0.8s;
+  }
+  
+  /* Keyframes for fadeInUp animation */
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  

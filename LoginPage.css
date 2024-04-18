@@ -131,3 +131,39 @@
     padding-right: 50px;
     padding-top: 42.5px;
 }
+
+
+/* Animation for login form */
+.Login-div {
+    animation: fadeInUp 1s ease-out;
+  }
+  
+  /* Animation for input fields */
+  .Username-container,
+  .password-container {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 1s ease-out forwards;
+  }
+  
+  @keyframes fadeInUp {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Delay each input field animation */
+  .Username-container {
+    animation-delay: 0.2s;
+  }
+  
+  .password-container {
+    animation-delay: 0.4s;
+  }
+  
+  
