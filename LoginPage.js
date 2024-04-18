@@ -1,42 +1,38 @@
 document.addEventListener('DOMContentLoaded', function() {
-    document.getElementById('loginForm').addEventListener('submit', function(event) {
-        event.preventDefault();
+    const loginForm = document.getElementById('loginForm');
 
-        // Authenticate user here, for example:
-        let username = document.querySelector('.Username-container').value;
-        let password = document.querySelector('.password-container').value;
+    loginForm.addEventListener('submit', function(event) {
+        event.preventDefault(); // Prevent form submission
+        
+        // Get form inputs
+        const usernameInput = document.getElementById('username');
+        const passwordInput = document.getElementById('password');
 
-        // Dummy authentication for demonstration purposes
-        if (username == "Tushar J Shukla" && password == "Tushar") {
-            // Redirect to TodayPage.html upon successful login
-            window.location.href = "TodayPage.html";
-        } else {
-            alert("Invalid username or password. Please try again.");
+        if (!usernameInput.value.trim()) {
+            alert('Please enter a username.');
+            return;
         }
+
+        if (!passwordInput.value.trim()) {
+            alert('Please enter a password.');
+            return;
+        }
+
+        if (passwordInput.value.trim().length < 8) {
+            alert('Password must be at least 8 characters long.');
+            return;
+        }
+
+        if (!containsNumberOrSpecialChar(usernameInput.value.trim())) {
+            alert('Username must contain at least one number or special character like "_".');
+            return;
+        }
+
+        // Redirect to TodayPage.html after successful form submission
+        window.location.href = 'TodayPage.html';
     });
+
+    function containsNumberOrSpecialChar(username) {
+        return /[0-9_]/.test(username);
+    }
 });
-
-    // document.getElementById('registrationForm').addEventListener('submit', function(event) {
-    //     event.preventDefault();
-
-    //     alert("Are you sure you want to submit the form?");
-
-    //     let accountNumber = document.getElementById('accountNumber').value;
-    //     let username = document.getElementById('username').value;
-    //     let accountType = document.getElementById('accountType').value;
-    //     let password = document.getElementById('password').value;
-    //     let confirmPassword = document.getElementById('confirmPassword').value;
-
-    //     console.log('Account Number:', accountNumber);
-    //     console.log('Username:', username);
-    //     console.log('Account Type:', accountType);
-
-    //     if (password !== confirmPassword) {
-    //         alert("Passwords do not match. Please check and try again.");
-    //     } else {
-    //         console.log('Password:', password);
-    //         console.log('Confirm Password:', confirmPassword);
-    //         // Here you can send the form data to the server for further processing
-    //         // For demonstration, I'm just logging the data
-    //     }
-    // });
