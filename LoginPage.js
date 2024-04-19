@@ -35,4 +35,34 @@ document.addEventListener('DOMContentLoaded', function() {
     function containsNumberOrSpecialChar(username) {
         return /[0-9_]/.test(username);
     }
+
+    // Function to animate text one by one
+    function animateText(element, text) {
+        var index = 0;
+        var timer = setInterval(function() {
+            // Append the next letter to the element
+            element.innerHTML += text.charAt(index);
+            index++;
+            // Stop the animation when all letters are appended
+            if (index === text.length) {
+                clearInterval(timer);
+            }
+        }, 75); // Adjust the delay (in milliseconds) between letters
+    }
+
+    // Call the animateText function for the first text element
+    var textElement1 = document.querySelector('.text');
+    animateText(textElement1, 'Welcome Back.!');
+
+    // Call the animateText function for the second text element after a brief delay
+    setTimeout(function() {
+        var textElement2 = document.querySelector('.text1');
+        animateText(textElement2, 'Log in');
+    }, 100); // Adjust the delay before animating the second text (in milliseconds)
+
+    // Call the animateText function for the third text element after the second text animation completes
+    setTimeout(function() {
+        var textElement3 = document.querySelector('.text2');
+        animateText(textElement3, 'Glad you’re back.!');
+    }, 750); // Adjust the delay before animating the third text (in milliseconds)
 });
