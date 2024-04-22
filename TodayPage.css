@@ -16,7 +16,7 @@
     font-weight: 400;
     line-height: normal;
 }
-.time{
+.Time{
     color: #FFF;
     font-family: Poppins;
     font-size: 19px;
@@ -71,6 +71,20 @@
     border-radius: 15px;
     text-decoration: none;
 }
+.Search-bar input[type="search"] {
+    width: calc(100% - 50px); /* Adjust the width based on the padding and icon width */
+    border: none;
+    background: none;
+    outline: none;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    color: #524E4E;
+    padding-left: 10px; /* Adjust the padding based on your design */
+}
+
 .Search-bar-components{
     padding-left: 50px;
     padding-top: 7px;
@@ -117,10 +131,13 @@
     align-items: center; /* Added */
 }
 
-.temp-icon-img,
+.temp-icon-img{
+    margin: 0 10px;
+    height: 75px; 
+    width: 20px;
+}
 .cloud-icon-img {
-    margin: 0 10px; /* Adjust spacing between icons */
-    
+    margin: 0 10px;
 }
 
 .temperature {

@@ -16,7 +16,7 @@
                     </div>       
                 <div class="Name">WeatherMe°C</div>
                 <br>
-                <div class="time">21:00pm</div>
+                <div class="Time" id="time">21:00pm</div>
                 <div class="nav-components">
                   <ul class="nav justify-content-end">
                     <li class="nav-item1">
@@ -33,29 +33,27 @@
           </nav>
     </div>
     <br><br>
-    <a href="SearchPage.html">
       <div class="Search-bar">
         <div class="Search-bar-components">
           <img src="🦆 icon _search_.png">
-          <div class="Search">Search location...</div>
+          <input type="search" id="searchInput" class="Search-bar" placeholder="Search location...">
          </div>
       </div>
-    </a>
     <br><br><br><br>
     <div class="Main-Info-div">
-      <p class="CityName">Mumbai</p>
+      <p class="CityName" id="City">Mumbai</p>
       <div class="Temperature-container"> 
-        <img src="🦆 icon _temperature_.jpg" class="temp-icon-img">
-        <p class="temperature">27°C</p>
+        <img src="Thermometer1.jpg" class="temp-icon-img">
+        <p class="temperature" id="temp">25°C</p>
         <img src="Cloud.png" class="cloud-icon-img">
       </div>
-      <p class="Date">April 22 , Monday</p>
+      <p class="Date" id="date">April 22 , Monday</p>
       <br><br><br>
       <div class="info-container">
-        <p class="info-box">Humindity <br> 99%</p>
-        <p class="info-box">Visibility <br> 8 Km</p>
-        <p class="info-box"> Air Pressure <br> 1005 hpa</p>
-        <p class="info-box">Wind <br> 2 mph</p>
+        <p class="info-box" id="humidity">Humindity <br> 99%</p>
+        <p class="info-box"id="feelslike">feels like <br> 27°C</p>
+        <p class="info-box" id="MaxMinTemp"> max_temp and min_temp <br> 22°C - 27°C</p>
+        <p class="info-box"id="windspeed">Wind <br> 2 mph</p>
       </div>
     </div>
     <br><br><br><br>
