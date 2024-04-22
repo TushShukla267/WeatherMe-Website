@@ -94,6 +94,47 @@ function getCurrentTime() {
 document.getElementById("date").innerHTML = getFormattedDate();
 document.getElementById("time").innerHTML = getCurrentTime();
 
+// Autocomplete functionality
+const cities = ["Mumbai", "Delhi", "Bangalore", "Hyderabad", "Chennai", "Kolkata", "Ahmedabad", "Pune", "Jaipur", "Surat", "Tokyo", "London", "Lucknow"];
+
+const searchInput = document.getElementById("searchInput");
+const searchResults = document.getElementById("searchResults");
+const suggestionsList = document.getElementById("suggestionsList");
+
+searchInput.addEventListener("input", function() {
+    const input = this.value.toLowerCase();
+    const suggestions = cities.filter(city => city.toLowerCase().startsWith(input));
+    displaySuggestions(suggestions);
+});
+
+function displaySuggestions(suggestions) {
+    if (suggestions.length === 0) {
+        searchResults.style.display = "none";
+        return;
+    }
+
+    suggestionsList.innerHTML = "";
+    suggestions.forEach(suggestion => {
+        const li = document.createElement("li");
+        li.textContent = suggestion;
+        li.addEventListener("click", function() {
+            searchInput.value = suggestion;
+            searchResults.style.display = "none";
+        });
+        suggestionsList.appendChild(li);
+    });
+
+    searchResults.style.display = "block";
+}
+
+// Hide the suggestions when clicking outside the input and suggestions list
+document.addEventListener("click", function(event) {
+    if (event.target !== searchInput && event.target !== suggestionsList) {
+        searchResults.style.display = "none";
+    }
+});
+
+
 
 
 
